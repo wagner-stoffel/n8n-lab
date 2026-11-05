@@ -1,32 +1,30 @@
 # n8n Lab — Wagner Stoffel
 
-Hands-on experiments with n8n, AI agents, and workflow integrations.
+I use this lab to explore what I can build with n8n, AI agents and connected services. I try integrations, inspect how data moves between nodes, and keep notes on what works and what I want to investigate next.
 
-This repository groups course exercises by week and day. My [professional portfolio](https://github.com/wagner-stoffel/portfolio) presents selected cases and their business context; this lab records the learning work behind future projects.
+My [portfolio](https://github.com/wagner-stoffel/portfolio) brings together selected cases and their business context. Here, I keep the experiments and technical notes.
 
-## Learning index
+## What I am exploring
 
-| Module | Topics | Status |
+| Area | My focus | Where I am |
 | --- | --- | --- |
-| [Week 1 · Day 4](week-01/day-04/README.md) | JSON, expressions, Pushover, Telegram, Slack, webhooks and workflow publishing | Exercises completed by the author; execution artifacts pending |
+| [Messaging and notifications](experiments/messaging/README.md) | Pushover, Telegram, Slack, webhooks and conversational memory | I have built the three integrations; exports and execution records are next |
+| [Data and expressions](docs/data-and-expressions.md) | JSON, field mapping and references between nodes | My working notes and examples |
+| [Validation](experiments/messaging/validation.md) | Delivery, context, failures and repeatability | My checklist for recording results |
 
-The author confirmed completion of all Day 4 examples on November 5, 2026. This repository currently contains documentation of that work. Workflow exports, screenshots, exact environment versions and per-test execution records have not yet been added. No continuous production operation or performance benchmark is claimed.
+## Inside the lab
 
-Earlier case studies remain in the portfolio: [Equity EOD AI Agent](https://github.com/wagner-stoffel/portfolio/tree/main/projects/01-equity-eod-ai-agent) and [Gmail Draft Assistant](https://github.com/wagner-stoffel/portfolio/tree/main/projects/02-gmail-draft-assistant). Their existing statuses are unchanged by completion of Day 4.
-
-## Contents
-
-- [Day 4 exercise notes](week-01/day-04/README.md)
+- [Messaging experiments](experiments/messaging/README.md)
 - [JSON and expressions](docs/data-and-expressions.md)
-- [Validation record](week-01/day-04/validation.md)
-- [Adding workflow exports and evidence](docs/publishing-workflows.md)
+- [Validation notebook](experiments/messaging/validation.md)
+- [How I prepare workflows for sharing](docs/publishing-workflows.md)
 
-## From exercise to portfolio case
+I have implemented the messaging workflows in n8n. I still need to add their reviewed exports, screenshots and execution details here. For now, these pages are my field notes rather than ready-to-import workflows.
 
-Keep small experiments together here. Create a standalone project repository when a solution has a defined problem, reusable implementation, setup instructions and recorded validation. Then link that project from the portfolio.
+## Where I want to take this
 
-Connecting the Day 4 channels to the Equity Agent, or adding notifications to the proposed Sheets integration, remains future work.
+I want to try Telegram as an interface for my Equity EOD AI Agent, explore completion alerts for spreadsheet updates, and give the Slack integration a concrete business task. Those connections are still on my backlog.
 
-## Attribution
+I keep small experiments together here. When one develops a clear purpose, reusable setup and recorded validation, I can give it its own repository and feature it in my portfolio.
 
-Based on Week 1, Day 4 of [AI Builder: Create Agents, Voice Agents & Automations in n8n](https://www.udemy.com/course/ai-builder-with-n8n-create-agents-voice-agents/), taught by Ed Donner. The exercises originate from the course; these notes summarize my learning and add documentation and validation structure. The course transcript and teaching assets are not redistributed.
+Related explorations: [Equity EOD AI Agent](https://github.com/wagner-stoffel/portfolio/tree/main/projects/01-equity-eod-ai-agent) and [Gmail Draft Assistant](https://github.com/wagner-stoffel/portfolio/tree/main/projects/02-gmail-draft-assistant).

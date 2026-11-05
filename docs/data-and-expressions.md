@@ -1,4 +1,6 @@
-# JSON and expressions — Day 4 notes
+# JSON and expressions — my working notes
+
+I use these notes to keep track of how I map data between nodes.
 
 JSON represents structured data using objects, arrays, strings, numbers, booleans and null. Keys and strings use straight double quotes; JSON does not allow trailing commas.
 
@@ -13,7 +15,7 @@ Synthetic example:
 }
 ```
 
-The ID is fictional. These expressions illustrate the lesson's Telegram flow; they are not an exported configuration from the author's instance.
+I use a fictional ID here. These examples capture the mappings I explored with Telegram; the actual workflow export is still on my backlog.
 
 | Field | Example | Purpose |
 | --- | --- | --- |
@@ -27,8 +29,8 @@ The ID is fictional. These expressions illustrate the lesson's Telegram flow; th
 
 The earlier node must have the referenced name and a linked item available. Inspect the expression preview against an actual execution. Messages without a text field need separate handling. For Slack, inspect its payload instead of copying Telegram's field paths.
 
-The lesson also introduces earlier-node references through `$node["Node name"]`. Dragging an inspected field into an expression helps obtain the appropriate path.
+I also keep earlier-node references in my notes through `$node["Node name"]`. Dragging an inspected field into an expression helps obtain the appropriate path.
 
 Serializing JSON makes it text; it does not validate its contents or make untrusted messages safe instructions. Pass only necessary fields when designing a reusable workflow.
 
-[Back to Day 4](../week-01/day-04/README.md)
+[Back to messaging experiments](../experiments/messaging/README.md)
