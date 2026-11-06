@@ -1,25 +1,26 @@
 # n8n Lab — Wagner Stoffel
 
-I use this lab to explore n8n, AI agents and connected services through practical exercises. My [portfolio](https://github.com/wagner-stoffel/portfolio) presents selected cases and their business context.
+I build and test workflow automations with n8n, AI agents and connected services. This repository documents the integrations I implemented, their configuration and execution results. My [portfolio](https://github.com/wagner-stoffel/portfolio) presents the business context of selected projects.
 
-## Completed practical work
+## Implemented workflows
 
-| Area | Focus | Work carried out |
+| Workflow | Integrations | Implementation |
 | --- | --- | --- |
-| [Portfolio rebalancer](experiments/portfolio-rebalancer/README.md) | Forms, Sheets, EOD prices, agent tools and notifications | Day 5 exercises completed, including successful and unsuccessful versions and publication |
-| [Messaging and notifications](experiments/messaging/README.md) | Pushover, Telegram, Slack and webhooks | Built the three integrations |
-| [Data and expressions](docs/data-and-expressions.md) | JSON, field mapping and references between nodes | Working notes from the integrations |
+| [Portfolio rebalancer](experiments/portfolio-rebalancer/README.md) | Google Sheets, Marketstack, Gmail and Pushover | Form input, EOD price updates, proposed quantities, allocation checks and conditional notifications |
+| [Messaging and notifications](experiments/messaging/README.md) | Pushover, Telegram and Slack | Push notifications, conversational replies and responses to app mentions |
+| [Data mapping](docs/data-and-expressions.md) | JSON and n8n expressions | Prompt input, agent output, reply destination and memory session mapping |
 
-## Day 5 — combining the integrations
+## Portfolio automation
 
-I built the form-driven portfolio-rebalancing exercise using Google Sheets, Marketstack, Gmail and Pushover. The work included agent instructions, tool descriptions, proposed-quantity updates, rereading the sheet, conditional notification routing and execution inspection.
+I implemented a form-driven workflow that reads a portfolio, retrieves EOD prices, updates proposed holdings, rereads the allocation and communicates the result. I configured the agent instructions, tool descriptions and conditional notification routing.
 
-I executed successful and unsuccessful versions and completed the workflow publication exercise. The [experiment notes](experiments/portfolio-rebalancer/README.md) describe the implemented flow and the lessons from that work.
+I tested successful and unsuccessful versions, inspected execution details and published the workflow. The [implementation documentation](experiments/portfolio-rebalancer/README.md) describes the components and execution behavior.
 
-## Technical notes
+## Technical documentation
 
-- [Messaging experiments](experiments/messaging/README.md)
+- [Messaging integrations](experiments/messaging/README.md)
+- [Messaging implementation record](experiments/messaging/validation.md)
 - [JSON and expressions](docs/data-and-expressions.md)
-- [How I prepare workflows for sharing](docs/publishing-workflows.md)
+- [Workflow publication](docs/publishing-workflows.md)
 
 Related case: [Equity EOD AI Agent & Portfolio Rebalancer](https://github.com/wagner-stoffel/portfolio/tree/main/projects/01-equity-eod-ai-agent).
