@@ -1,29 +1,17 @@
-# How I prepare workflows for sharing
+# Workflow publication
 
-I want someone else to be able to understand and reproduce an experiment without exposing my credentials or private messages. I have built the messaging workflows in n8n; adding reviewed exports is my next documentation step.
+I published n8n workflows and tested their external triggers.
 
-## Where I will keep the artifacts
+## Portfolio form
 
-- `experiments/messaging/workflows/pushover.json`
-- `experiments/messaging/workflows/telegram.json`
-- `experiments/messaging/workflows/slack.json`
-- `experiments/messaging/evidence/` for reviewed screenshots and execution excerpts
+I published the portfolio-rebalancing workflow and submitted its production form. The submission triggered the agent, spreadsheet operations and notifications.
 
-These are planned locations. I have not added the artifacts yet.
+## Messaging integrations
 
-## My preparation checklist
+I configured messaging triggers and tested workflow publication. For Slack, I connected app-mention events to the trigger webhook and worked with test and production URLs.
 
-1. I export the actual workflow into a local `raw-exports/` directory.
-2. I review parameters, headers, URLs, pinned data and credential references for secrets and private information.
-3. I replace environment-specific values with documented placeholders.
-4. I save the reviewed copy alongside the experiment.
-5. I validate the JSON and check the import in a separate workflow before calling it reproducible.
-6. I record the observed results in the validation notebook.
+## Execution inspection
 
-My .gitignore helps keep local configuration and raw exports out of commits. It does not sanitize the contents of a workflow.
+I inspected execution logs and tool interactions while testing successful and unsuccessful versions of the portfolio workflow. This inspection supported adjustments to input mapping, instructions and tool descriptions.
 
-## What I want each experiment to explain
-
-I document the purpose, data flow, configuration assumptions, observations, limitations and next questions. I record versions and deployment state when I capture execution evidence.
-
-[Back to lab](../README.md)
+[Portfolio rebalancer](../experiments/portfolio-rebalancer/README.md) · [Messaging integrations](../experiments/messaging/README.md) · [Back to lab](../README.md)
