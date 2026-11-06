@@ -1,30 +1,25 @@
 # n8n Lab — Wagner Stoffel
 
-I use this lab to explore what I can build with n8n, AI agents and connected services. I try integrations, inspect how data moves between nodes, and keep notes on what works and what I want to investigate next.
+I use this lab to explore n8n, AI agents and connected services through practical exercises. My [portfolio](https://github.com/wagner-stoffel/portfolio) presents selected cases and their business context.
 
-My [portfolio](https://github.com/wagner-stoffel/portfolio) brings together selected cases and their business context. Here, I keep the experiments and technical notes.
+## Completed practical work
 
-## What I am exploring
-
-| Area | My focus | Where I am |
+| Area | Focus | Work carried out |
 | --- | --- | --- |
-| [Messaging and notifications](experiments/messaging/README.md) | Pushover, Telegram, Slack, webhooks and conversational memory | I have built the three integrations; exports and execution records are next |
-| [Data and expressions](docs/data-and-expressions.md) | JSON, field mapping and references between nodes | My working notes and examples |
-| [Validation](experiments/messaging/validation.md) | Delivery, context, failures and repeatability | My checklist for recording results |
+| [Portfolio rebalancer](experiments/portfolio-rebalancer/README.md) | Forms, Sheets, EOD prices, agent tools and notifications | Day 5 exercises completed, including successful and unsuccessful versions and publication |
+| [Messaging and notifications](experiments/messaging/README.md) | Pushover, Telegram, Slack and webhooks | Built the three integrations |
+| [Data and expressions](docs/data-and-expressions.md) | JSON, field mapping and references between nodes | Working notes from the integrations |
 
-## Inside the lab
+## Day 5 — combining the integrations
+
+I built the form-driven portfolio-rebalancing exercise using Google Sheets, Marketstack, Gmail and Pushover. The work included agent instructions, tool descriptions, proposed-quantity updates, rereading the sheet, conditional notification routing and execution inspection.
+
+I executed successful and unsuccessful versions and completed the workflow publication exercise. The [experiment notes](experiments/portfolio-rebalancer/README.md) describe the implemented flow and the lessons from that work.
+
+## Technical notes
 
 - [Messaging experiments](experiments/messaging/README.md)
 - [JSON and expressions](docs/data-and-expressions.md)
-- [Validation notebook](experiments/messaging/validation.md)
 - [How I prepare workflows for sharing](docs/publishing-workflows.md)
 
-I have implemented the messaging workflows in n8n. I still need to add their reviewed exports, screenshots and execution details here. For now, these pages are my field notes rather than ready-to-import workflows.
-
-## Where I want to take this
-
-I want to try Telegram as an interface for my Equity EOD AI Agent, explore completion alerts for spreadsheet updates, and give the Slack integration a concrete business task. Those connections are still on my backlog.
-
-I keep small experiments together here. When one develops a clear purpose, reusable setup and recorded validation, I can give it its own repository and feature it in my portfolio.
-
-Related explorations: [Equity EOD AI Agent](https://github.com/wagner-stoffel/portfolio/tree/main/projects/01-equity-eod-ai-agent) and [Gmail Draft Assistant](https://github.com/wagner-stoffel/portfolio/tree/main/projects/02-gmail-draft-assistant).
+Related case: [Equity EOD AI Agent & Portfolio Rebalancer](https://github.com/wagner-stoffel/portfolio/tree/main/projects/01-equity-eod-ai-agent).
