@@ -1,6 +1,6 @@
-# JSON and expressions — my working notes
+# JSON and expressions
 
-I use these notes to keep track of how I map data between nodes.
+I used JSON expressions to map data between the trigger, agent, memory and messaging nodes.
 
 JSON represents structured data using objects, arrays, strings, numbers, booleans and null. Keys and strings use straight double quotes; JSON does not allow trailing commas.
 
@@ -15,7 +15,7 @@ Synthetic example:
 }
 ```
 
-I use a fictional ID here. These examples capture the mappings I explored with Telegram; the actual workflow export is still on my backlog.
+I use a fictional ID here. These examples document the mappings I implemented with Telegram.
 
 | Field | Example | Purpose |
 | --- | --- | --- |
