@@ -8,6 +8,7 @@ I build and test workflow automations with n8n, AI agents and connected services
 | --- | --- | --- |
 | [Portfolio rebalancer](experiments/portfolio-rebalancer/README.md) | Google Sheets, Marketstack, Gmail and Pushover | Form input, EOD price updates, proposed quantities, allocation checks and conditional notifications |
 | [Messaging and notifications](experiments/messaging/README.md) | Pushover, Telegram and Slack | Push notifications, conversational replies and responses to app mentions |
+| [Voice customer support](experiments/elevenlabs-voice-agent/README.md) | ElevenLabs | Voice agents, product and stock knowledge documents, conditional routing and spoken tests |
 | [Data mapping](docs/data-and-expressions.md) | JSON and n8n expressions | Prompt input, agent output, reply destination and memory session mapping |
 
 ## Portfolio automation
@@ -16,8 +17,14 @@ I implemented a form-driven workflow that reads a portfolio, retrieves EOD price
 
 I tested successful and unsuccessful versions, inspected execution details and published the workflow. The [implementation documentation](experiments/portfolio-rebalancer/README.md) describes the components and execution behavior.
 
+## Voice customer support
+
+I built and tested a voice-support workflow in ElevenLabs with a main agent and separate product and stock specialists. I configured prompts, voices, knowledge documents and routing conditions, then tested both routes in spoken conversations.
+
 ## Technical documentation
 
+- [Voice-agent implementation](experiments/elevenlabs-voice-agent/README.md)
+- [Voice-agent execution record](experiments/elevenlabs-voice-agent/validation.md)
 - [Messaging integrations](experiments/messaging/README.md)
 - [Messaging implementation record](experiments/messaging/validation.md)
 - [JSON and expressions](docs/data-and-expressions.md)
