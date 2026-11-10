@@ -9,6 +9,7 @@ I build and test workflow automations with n8n, AI agents and connected services
 | [Portfolio rebalancer](experiments/portfolio-rebalancer/README.md) | Google Sheets, Marketstack, Gmail and Pushover | Form input, EOD price updates, proposed quantities, allocation checks and conditional notifications |
 | [Messaging and notifications](experiments/messaging/README.md) | Pushover, Telegram and Slack | Push notifications, conversational replies and responses to app mentions |
 | [Voice customer support](experiments/elevenlabs-voice-agent/README.md) | ElevenLabs | Voice agents, product and stock knowledge documents, conditional routing and spoken tests |
+| [Voice workflows and portfolio assistant](experiments/elevenlabs-n8n-integration/README.md) | ElevenLabs, Gemini and Google Sheets | Audio round trip, POST webhook tool, holdings lookup and published voice conversation |
 | [Data mapping](docs/data-and-expressions.md) | JSON and n8n expressions | Prompt input, agent output, reply destination and memory session mapping |
 
 ## Portfolio automation
@@ -21,8 +22,14 @@ I tested successful and unsuccessful versions, inspected execution details and p
 
 I built and tested a voice-support workflow in ElevenLabs with a main agent and separate product and stock specialists. I configured prompts, voices, knowledge documents and routing conditions, then tested both routes in spoken conversations.
 
+## Voice and n8n integration
+
+I implemented an audio pipeline with transcription, Gemini responses and speech generation. I also connected an ElevenLabs voice agent to an n8n Google Sheets lookup through a POST webhook, published the integration and tested consecutive portfolio questions.
+
 ## Technical documentation
 
+- [Voice and n8n integration](experiments/elevenlabs-n8n-integration/README.md)
+- [Integration execution record](experiments/elevenlabs-n8n-integration/validation.md)
 - [Voice-agent implementation](experiments/elevenlabs-voice-agent/README.md)
 - [Voice-agent execution record](experiments/elevenlabs-voice-agent/validation.md)
 - [Messaging integrations](experiments/messaging/README.md)
