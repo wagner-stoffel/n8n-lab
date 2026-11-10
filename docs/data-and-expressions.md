@@ -33,4 +33,21 @@ I also keep earlier-node references in my notes through `$node["Node name"]`. Dr
 
 Serializing JSON makes it text; it does not validate its contents or make untrusted messages safe instructions. Pass only necessary fields when designing a reusable workflow.
 
+## Voice workflow mappings
+
+I inspected the incoming payloads and configured these mappings in the ElevenLabs integrations:
+
+| Destination | Input | Use |
+| --- | --- | --- |
+| Speech-to-text node | Binary property `audio` | Read the browser's uploaded recording |
+| AI Agent after transcription | `{{ $json.text }}` | Use the transcribed question |
+| Text-to-speech node | `{{ $json.output }}` | Speak the generated answer |
+| Portfolio-query agent | `{{ $json.body.question }}` | Read the question posted by the ElevenLabs tool |
+| Audio webhook response | Binary property `data` | Return the generated audio file |
+| Portfolio webhook response | First incoming item | Return the agent result as JSON |
+
+I selected Define below for the agent inputs that receive transcription or webhook data. These mappings resolved the input errors observed during execution.
+
+[Voice integration](../experiments/elevenlabs-n8n-integration/README.md)
+
 [Back to messaging experiments](../experiments/messaging/README.md)
