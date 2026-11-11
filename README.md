@@ -26,6 +26,13 @@ I built and tested a voice-support workflow in ElevenLabs with a main agent and 
 
 I implemented an audio pipeline with transcription, Gemini responses and speech generation. I also connected an ElevenLabs voice agent to an n8n Google Sheets lookup through a POST webhook, published the integration and tested consecutive portfolio questions.
 
+## Retrieval analysis and database setup
+
+I analyzed retrieval-augmented generation, embeddings, semantic search and agent-directed retrieval. I also set up a personal Supabase account and reviewed its database offering, documentation and plans.
+
+- [Retrieval and agentic RAG analysis](docs/retrieval-and-agentic-rag.md)
+- [Supabase account setup and platform review](docs/supabase-setup.md)
+
 ## Technical documentation
 
 - [Voice and n8n integration](experiments/elevenlabs-n8n-integration/README.md)
