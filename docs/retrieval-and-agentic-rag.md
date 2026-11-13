@@ -52,8 +52,8 @@ I also examined the distinction between semantic retrieval and structured lookup
 
 ## Connection to my implemented workflows
 
-My [voice portfolio assistant](../experiments/elevenlabs-n8n-integration/README.md) uses an agent-selected Google Sheets lookup to answer holdings questions. Its tool-based retrieval provides a concrete reference for separating conversation, data access and response generation.
+My [voice portfolio assistant](../projects/elevenlabs-n8n-integration/README.md) uses an agent-selected Google Sheets lookup to answer holdings questions. Its tool-based retrieval provides a concrete reference for separating conversation, data access and response generation.
 
-My [voice customer-support workflow](../experiments/elevenlabs-voice-agent/README.md) assigns product and stock documents to separate specialists. It records the use of document context in spoken responses.
+My [voice customer-support workflow](../projects/elevenlabs-voice-agent/README.md) assigns product and stock documents to separate specialists. It records the use of document context in spoken responses.
 
 [Supabase setup and platform review](supabase-setup.md) · [Back to lab](../README.md)
