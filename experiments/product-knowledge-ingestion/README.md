@@ -71,4 +71,6 @@ I ran the workflow and inspected the populated table, including the content, cat
 
 During inspection, I found an extra dollar sign before the description text. I removed the initial 60 records, corrected the Edit Fields expression and reran the ingestion. I inspected the reloaded content and confirmed that the unwanted character was removed. The corrected load contained 60 documents.
 
+The [product expert voice agent](../product-expert-voice-agent/README.md) uses this knowledge base to retrieve product context and answer spoken questions.
+
 [Execution record](validation.md) · [Portfolio case study](https://github.com/wagner-stoffel/portfolio/tree/main/projects/08-product-knowledge-ingestion) · [Back to lab](../../README.md)
