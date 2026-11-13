@@ -16,10 +16,10 @@ I published the n8n portfolio-query workflow and copied its production webhook U
 
 I tested a question about SPY shares and a follow-up about the other holdings in the same conversation. Both requests returned spoken answers through the published integration.
 
-[Voice integration and execution record](../experiments/elevenlabs-n8n-integration/README.md)
+[Voice integration and execution record](../projects/elevenlabs-n8n-integration/README.md)
 
 ## Execution inspection
 
 I inspected execution logs and tool interactions while testing successful and unsuccessful versions of the portfolio workflow. This inspection supported adjustments to input mapping, instructions and tool descriptions.
 
-[Portfolio rebalancer](../experiments/portfolio-rebalancer/README.md) · [Messaging integrations](../experiments/messaging/README.md) · [Back to lab](../README.md)
+[Portfolio rebalancer](../projects/portfolio-rebalancer/README.md) · [Messaging integrations](../projects/messaging/README.md) · [Back to lab](../README.md)
