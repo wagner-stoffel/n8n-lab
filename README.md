@@ -6,12 +6,17 @@ I build and test workflow automations with n8n, AI agents and connected services
 
 | Workflow | Integrations | Implementation |
 | --- | --- | --- |
+| [Product expert voice agent](experiments/product-expert-voice-agent/README.md) | ElevenLabs, n8n, Supabase, Gemini and OpenAI embeddings | Agentic product retrieval, spoken answers, webhook integration and publication |
 | [Product knowledge ingestion](experiments/product-knowledge-ingestion/README.md) | Google Sheets, Supabase and OpenAI embeddings | Product transformation, category metadata, 1536-dimensional embeddings and 60-document ingestion |
 | [Voice workflows and portfolio assistant](experiments/elevenlabs-n8n-integration/README.md) | ElevenLabs, Gemini and Google Sheets | Audio round trip, POST webhook tool, holdings lookup and published voice conversation |
 | [Voice customer support](experiments/elevenlabs-voice-agent/README.md) | ElevenLabs | Voice agents, product and stock knowledge documents, conditional routing and spoken tests |
 | [Portfolio rebalancer](experiments/portfolio-rebalancer/README.md) | Google Sheets, Marketstack, Gmail and Pushover | Form input, EOD price updates, proposed quantities, allocation checks and conditional notifications |
 | [Messaging and notifications](experiments/messaging/README.md) | Pushover, Telegram and Slack | Push notifications, conversational replies and responses to app mentions |
 | [Data mapping](docs/data-and-expressions.md) | JSON and n8n expressions | Prompt input, agent output, reply destination and memory session mapping |
+
+## Product expert voice agent
+
+I connected an ElevenLabs sales agent to an n8n retrieval workflow backed by the product knowledge base in Supabase. I tested product questions in chat and by voice, inspected the retrieval execution and published the integration.
 
 ## Product knowledge ingestion
 
@@ -39,6 +44,9 @@ I implemented a form-driven workflow that reads a portfolio, retrieves EOD price
 I tested successful and unsuccessful versions, inspected execution details and published the workflow. The [implementation documentation](experiments/portfolio-rebalancer/README.md) describes the components and execution behavior.
 
 ## Technical documentation
+
+- [Product expert voice agent](experiments/product-expert-voice-agent/README.md)
+- [Product expert execution record](experiments/product-expert-voice-agent/validation.md)
 
 - [Product ingestion implementation](experiments/product-knowledge-ingestion/README.md)
 - [Database schema](experiments/product-knowledge-ingestion/schema.sql)
