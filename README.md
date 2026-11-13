@@ -6,26 +6,16 @@ I build and test workflow automations with n8n, AI agents and connected services
 
 | Workflow | Integrations | Implementation |
 | --- | --- | --- |
+| [Product knowledge ingestion](experiments/product-knowledge-ingestion/README.md) | Google Sheets, Supabase and OpenAI embeddings | Product transformation, category metadata, 1536-dimensional embeddings and 60-document ingestion |
+| [Voice workflows and portfolio assistant](experiments/elevenlabs-n8n-integration/README.md) | ElevenLabs, Gemini and Google Sheets | Audio round trip, POST webhook tool, holdings lookup and published voice conversation |
+| [Voice customer support](experiments/elevenlabs-voice-agent/README.md) | ElevenLabs | Voice agents, product and stock knowledge documents, conditional routing and spoken tests |
 | [Portfolio rebalancer](experiments/portfolio-rebalancer/README.md) | Google Sheets, Marketstack, Gmail and Pushover | Form input, EOD price updates, proposed quantities, allocation checks and conditional notifications |
 | [Messaging and notifications](experiments/messaging/README.md) | Pushover, Telegram and Slack | Push notifications, conversational replies and responses to app mentions |
-| [Voice customer support](experiments/elevenlabs-voice-agent/README.md) | ElevenLabs | Voice agents, product and stock knowledge documents, conditional routing and spoken tests |
-| [Voice workflows and portfolio assistant](experiments/elevenlabs-n8n-integration/README.md) | ElevenLabs, Gemini and Google Sheets | Audio round trip, POST webhook tool, holdings lookup and published voice conversation |
-| [Product knowledge ingestion](experiments/product-knowledge-ingestion/README.md) | Google Sheets, Supabase and OpenAI embeddings | Product transformation, category metadata, 1536-dimensional embeddings and 60-document ingestion |
 | [Data mapping](docs/data-and-expressions.md) | JSON and n8n expressions | Prompt input, agent output, reply destination and memory session mapping |
 
-## Portfolio automation
+## Product knowledge ingestion
 
-I implemented a form-driven workflow that reads a portfolio, retrieves EOD prices, updates proposed holdings, rereads the allocation and communicates the result. I configured the agent instructions, tool descriptions and conditional notification routing.
-
-I tested successful and unsuccessful versions, inspected execution details and published the workflow. The [implementation documentation](experiments/portfolio-rebalancer/README.md) describes the components and execution behavior.
-
-## Voice customer support
-
-I built and tested a voice-support workflow in ElevenLabs with a main agent and separate product and stock specialists. I configured prompts, voices, knowledge documents and routing conditions, then tested both routes in spoken conversations.
-
-## Voice and n8n integration
-
-I implemented an audio pipeline with transcription, Gemini responses and speech generation. I also connected an ElevenLabs voice agent to an n8n Google Sheets lookup through a POST webhook, published the integration and tested consecutive portfolio questions.
+I transformed 60 product rows into readable documents, generated embeddings and loaded them into Supabase. I inspected the stored content and metadata, corrected a formatting error and reloaded the 60 documents.
 
 ## Retrieval analysis and database setup
 
@@ -34,9 +24,19 @@ I analyzed retrieval-augmented generation, embeddings, semantic search and agent
 - [Retrieval and agentic RAG analysis](docs/retrieval-and-agentic-rag.md)
 - [Supabase account setup and platform review](docs/supabase-setup.md)
 
-## Product knowledge ingestion
+## Voice and n8n integration
 
-I transformed 60 product rows into readable documents, generated embeddings and loaded them into Supabase. I inspected the stored content and metadata, corrected a formatting error and reloaded the 60 documents.
+I implemented an audio pipeline with transcription, Gemini responses and speech generation. I also connected an ElevenLabs voice agent to an n8n Google Sheets lookup through a POST webhook, published the integration and tested consecutive portfolio questions.
+
+## Voice customer support
+
+I built and tested a voice-support workflow in ElevenLabs with a main agent and separate product and stock specialists. I configured prompts, voices, knowledge documents and routing conditions, then tested both routes in spoken conversations.
+
+## Portfolio automation
+
+I implemented a form-driven workflow that reads a portfolio, retrieves EOD prices, updates proposed holdings, rereads the allocation and communicates the result. I configured the agent instructions, tool descriptions and conditional notification routing.
+
+I tested successful and unsuccessful versions, inspected execution details and published the workflow. The [implementation documentation](experiments/portfolio-rebalancer/README.md) describes the components and execution behavior.
 
 ## Technical documentation
 
