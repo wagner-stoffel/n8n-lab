@@ -6,12 +6,12 @@ I build and test workflow automations with n8n, AI agents and connected services
 
 | Workflow | Integrations | Implementation |
 | --- | --- | --- |
-| [Product expert voice agent](experiments/product-expert-voice-agent/README.md) | ElevenLabs, n8n, Supabase, Gemini and OpenAI embeddings | Agentic product retrieval, spoken answers, webhook integration and publication |
-| [Product knowledge ingestion](experiments/product-knowledge-ingestion/README.md) | Google Sheets, Supabase and OpenAI embeddings | Product transformation, category metadata, 1536-dimensional embeddings and 60-document ingestion |
-| [Voice workflows and portfolio assistant](experiments/elevenlabs-n8n-integration/README.md) | ElevenLabs, Gemini and Google Sheets | Audio round trip, POST webhook tool, holdings lookup and published voice conversation |
-| [Voice customer support](experiments/elevenlabs-voice-agent/README.md) | ElevenLabs | Voice agents, product and stock knowledge documents, conditional routing and spoken tests |
-| [Portfolio rebalancer](experiments/portfolio-rebalancer/README.md) | Google Sheets, Marketstack, Gmail and Pushover | Form input, EOD price updates, proposed quantities, allocation checks and conditional notifications |
-| [Messaging and notifications](experiments/messaging/README.md) | Pushover, Telegram and Slack | Push notifications, conversational replies and responses to app mentions |
+| [Product expert voice agent](projects/product-expert-voice-agent/README.md) | ElevenLabs, n8n, Supabase, Gemini and OpenAI embeddings | Agentic product retrieval, spoken answers, webhook integration and publication |
+| [Product knowledge ingestion](projects/product-knowledge-ingestion/README.md) | Google Sheets, Supabase and OpenAI embeddings | Product transformation, category metadata, 1536-dimensional embeddings and 60-document ingestion |
+| [Voice workflows and portfolio assistant](projects/elevenlabs-n8n-integration/README.md) | ElevenLabs, Gemini and Google Sheets | Audio round trip, POST webhook tool, holdings lookup and published voice conversation |
+| [Voice customer support](projects/elevenlabs-voice-agent/README.md) | ElevenLabs | Voice agents, product and stock knowledge documents, conditional routing and spoken tests |
+| [Portfolio rebalancer](projects/portfolio-rebalancer/README.md) | Google Sheets, Marketstack, Gmail and Pushover | Form input, EOD price updates, proposed quantities, allocation checks and conditional notifications |
+| [Messaging and notifications](projects/messaging/README.md) | Pushover, Telegram and Slack | Push notifications, conversational replies and responses to app mentions |
 | [Data mapping](docs/data-and-expressions.md) | JSON and n8n expressions | Prompt input, agent output, reply destination and memory session mapping |
 
 ## Product expert voice agent
@@ -41,23 +41,23 @@ I built and tested a voice-support workflow in ElevenLabs with a main agent and 
 
 I implemented a form-driven workflow that reads a portfolio, retrieves EOD prices, updates proposed holdings, rereads the allocation and communicates the result. I configured the agent instructions, tool descriptions and conditional notification routing.
 
-I tested successful and unsuccessful versions, inspected execution details and published the workflow. The [implementation documentation](experiments/portfolio-rebalancer/README.md) describes the components and execution behavior.
+I tested successful and unsuccessful versions, inspected execution details and published the workflow. The [implementation documentation](projects/portfolio-rebalancer/README.md) describes the components and execution behavior.
 
 ## Technical documentation
 
-- [Product expert voice agent](experiments/product-expert-voice-agent/README.md)
-- [Product expert execution record](experiments/product-expert-voice-agent/validation.md)
+- [Product expert voice agent](projects/product-expert-voice-agent/README.md)
+- [Product expert execution record](projects/product-expert-voice-agent/validation.md)
 
-- [Product ingestion implementation](experiments/product-knowledge-ingestion/README.md)
-- [Database schema](experiments/product-knowledge-ingestion/schema.sql)
-- [Ingestion execution record](experiments/product-knowledge-ingestion/validation.md)
+- [Product ingestion implementation](projects/product-knowledge-ingestion/README.md)
+- [Database schema](projects/product-knowledge-ingestion/schema.sql)
+- [Ingestion execution record](projects/product-knowledge-ingestion/validation.md)
 
-- [Voice and n8n integration](experiments/elevenlabs-n8n-integration/README.md)
-- [Integration execution record](experiments/elevenlabs-n8n-integration/validation.md)
-- [Voice-agent implementation](experiments/elevenlabs-voice-agent/README.md)
-- [Voice-agent execution record](experiments/elevenlabs-voice-agent/validation.md)
-- [Messaging integrations](experiments/messaging/README.md)
-- [Messaging implementation record](experiments/messaging/validation.md)
+- [Voice and n8n integration](projects/elevenlabs-n8n-integration/README.md)
+- [Integration execution record](projects/elevenlabs-n8n-integration/validation.md)
+- [Voice-agent implementation](projects/elevenlabs-voice-agent/README.md)
+- [Voice-agent execution record](projects/elevenlabs-voice-agent/validation.md)
+- [Messaging integrations](projects/messaging/README.md)
+- [Messaging implementation record](projects/messaging/validation.md)
 - [JSON and expressions](docs/data-and-expressions.md)
 - [Workflow publication](docs/publishing-workflows.md)
 
