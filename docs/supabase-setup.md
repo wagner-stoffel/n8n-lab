@@ -18,7 +18,7 @@ The n8n Host field uses `https://xxxxx.supabase.co`, without the REST path `/res
 
 I configured 1536-dimensional embeddings and loaded 60 product documents with their category metadata. I inspected the stored records, corrected the description mapping and reloaded the data.
 
-[Ingestion configuration, SQL and execution record](../experiments/product-knowledge-ingestion/README.md)
+[Ingestion configuration, SQL and execution record](../projects/product-knowledge-ingestion/README.md)
 
 ## Database concepts reviewed
 
