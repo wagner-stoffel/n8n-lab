@@ -10,6 +10,7 @@ I build and test workflow automations with n8n, AI agents and connected services
 | [Messaging and notifications](experiments/messaging/README.md) | Pushover, Telegram and Slack | Push notifications, conversational replies and responses to app mentions |
 | [Voice customer support](experiments/elevenlabs-voice-agent/README.md) | ElevenLabs | Voice agents, product and stock knowledge documents, conditional routing and spoken tests |
 | [Voice workflows and portfolio assistant](experiments/elevenlabs-n8n-integration/README.md) | ElevenLabs, Gemini and Google Sheets | Audio round trip, POST webhook tool, holdings lookup and published voice conversation |
+| [Product knowledge ingestion](experiments/product-knowledge-ingestion/README.md) | Google Sheets, Supabase and OpenAI embeddings | Product transformation, category metadata, 1536-dimensional embeddings and 60-document ingestion |
 | [Data mapping](docs/data-and-expressions.md) | JSON and n8n expressions | Prompt input, agent output, reply destination and memory session mapping |
 
 ## Portfolio automation
@@ -33,7 +34,15 @@ I analyzed retrieval-augmented generation, embeddings, semantic search and agent
 - [Retrieval and agentic RAG analysis](docs/retrieval-and-agentic-rag.md)
 - [Supabase account setup and platform review](docs/supabase-setup.md)
 
+## Product knowledge ingestion
+
+I transformed 60 product rows into readable documents, generated embeddings and loaded them into Supabase. I inspected the stored content and metadata, corrected a formatting error and reloaded the 60 documents.
+
 ## Technical documentation
+
+- [Product ingestion implementation](experiments/product-knowledge-ingestion/README.md)
+- [Database schema](experiments/product-knowledge-ingestion/schema.sql)
+- [Ingestion execution record](experiments/product-knowledge-ingestion/validation.md)
 
 - [Voice and n8n integration](experiments/elevenlabs-n8n-integration/README.md)
 - [Integration execution record](experiments/elevenlabs-n8n-integration/validation.md)
