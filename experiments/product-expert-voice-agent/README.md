@@ -38,7 +38,7 @@ I removed Simple Memory from the webhook backend after using it for chat testing
 
 ## ElevenLabs configuration
 
-I created an electronics sales agent with the Miss Walker voice. Its system instructions describe a knowledgeable computer-accessories sales assistant and direct it to use its tool for product questions.
+I created an electronics sales agent. Its system instructions describe a knowledgeable computer-accessories sales assistant and direct it to use its tool for product questions.
 
 | Tool setting | Configuration |
 | --- | --- |
