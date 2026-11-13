@@ -48,6 +48,6 @@ I inspected the incoming payloads and configured these mappings in the ElevenLab
 
 I selected Define below for the agent inputs that receive transcription or webhook data. These mappings resolved the input errors observed during execution.
 
-[Voice integration](../experiments/elevenlabs-n8n-integration/README.md)
+[Voice integration](../projects/elevenlabs-n8n-integration/README.md)
 
-[Back to messaging experiments](../experiments/messaging/README.md)
+[Back to messaging projects](../projects/messaging/README.md)
