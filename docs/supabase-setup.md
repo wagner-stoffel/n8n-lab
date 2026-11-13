@@ -1,4 +1,4 @@
-# Supabase — Account Setup and Platform Review
+# Supabase — Setup and Vector Database
 
 I set up a personal Supabase account and reviewed its dashboard, documentation and database offering.
 
@@ -9,6 +9,16 @@ I set up a personal Supabase account and reviewed its dashboard, documentation a
 - Reviewed the managed PostgreSQL database offering.
 - Examined the role of vector embeddings in storing and retrieving related content.
 - Reviewed the available plans and usage allowances.
+
+## Product knowledge database
+
+I created a Supabase project, enabled the vector extension and executed SQL to create the knowledgebase table and match_documents function. I connected n8n using the project base URL and service-role credential.
+
+The n8n Host field uses `https://xxxxx.supabase.co`, without the REST path `/rest/v1`.
+
+I configured 1536-dimensional embeddings and loaded 60 product documents with their category metadata. I inspected the stored records, corrected the description mapping and reloaded the data.
+
+[Ingestion configuration, SQL and execution record](../experiments/product-knowledge-ingestion/README.md)
 
 ## Database concepts reviewed
 
