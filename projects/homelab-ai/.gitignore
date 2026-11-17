@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+backups/
+evidence/
+*.log
+*.tar.gz
+*.zip
+

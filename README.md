@@ -49,7 +49,16 @@ I implemented a form-driven workflow that reads a portfolio, retrieves EOD price
 
 I tested successful and unsuccessful versions, inspected execution details and published the workflow. The [implementation documentation](projects/portfolio-rebalancer/README.md) describes the components and execution behavior.
 
+## HomeLab AI configuration
+
+I prepared a dedicated-server architecture and Docker Compose configuration for n8n and Ollama with NVIDIA GPU access. The package defines persistent storage, private model networking, SSH access and a public-tunnel override, with installation, integration, validation and backup/restore procedures.
+
+[HomeLab AI configuration and operating guides](projects/homelab-ai/README.md)
+
 ## Technical documentation
+
+- [HomeLab AI architecture and configuration](projects/homelab-ai/README.md)
+- [HomeLab AI backup and restore procedure](projects/homelab-ai/docs/backup-and-restore.md)
 
 - [Local integrations setup and reproduction guides](projects/n8n-local-integrations/README.md)
 - [Local integrations execution record](projects/n8n-local-integrations/docs/validation.md)

@@ -1,0 +1,7 @@
+services:
+  n8n:
+    environment:
+      N8N_EDITOR_BASE_URL: ${PUBLIC_BASE_URL:?Set PUBLIC_BASE_URL in .env to the actual HTTPS tunnel URL without a trailing slash}
+      N8N_WEBHOOK_URL: ${PUBLIC_BASE_URL:?Set PUBLIC_BASE_URL in .env}/
+      N8N_PROXY_HOPS: "1"
+
