@@ -18,7 +18,7 @@ The editor and OAuth callback use localhost. ngrok supplies the public webhook a
 
 | Area | Implementation | Executed check |
 | --- | --- | --- |
-| Local environment | Docker and n8n with São Paulo timezone | Manual Trigger and Edit Fields returned the configured fields |
+| Local environment | Docker and self-hosted n8n | Manual Trigger and Edit Fields returned the configured fields |
 | Public webhooks | ngrok tunnel and public webhook URL configuration | POST payload received through test and production webhook URLs |
 | Google OAuth2 | Google Cloud project, enabled APIs, consent configuration and web application client | Google credentials authorized in n8n |
 | Google Sheets | Authorized spreadsheet access | Test row retrieved |
