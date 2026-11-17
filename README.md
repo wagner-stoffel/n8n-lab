@@ -6,6 +6,7 @@ I build and test workflow automations with n8n, AI agents and connected services
 
 | Workflow | Integrations | Implementation |
 | --- | --- | --- |
+| [Local integrations](projects/n8n-local-integrations/README.md) | Docker, ngrok, Google OAuth2, Google Sheets and Gmail | Local workflow execution, public webhooks, spreadsheet retrieval and draft creation |
 | [Self-hosted AI agent](projects/self-hosted-ai-agent/README.md) | Docker, Ollama, OpenRouter and Marketstack | Local n8n, persistent storage, remote and local inference, and financial-data tool calls |
 | [Product expert voice agent](projects/product-expert-voice-agent/README.md) | ElevenLabs, n8n, Supabase, Gemini and OpenAI embeddings | Agentic product retrieval, spoken answers, webhook integration and publication |
 | [Product knowledge ingestion](projects/product-knowledge-ingestion/README.md) | Google Sheets, Supabase and OpenAI embeddings | Product transformation, category metadata, 1536-dimensional embeddings and 60-document ingestion |
@@ -49,6 +50,9 @@ I implemented a form-driven workflow that reads a portfolio, retrieves EOD price
 I tested successful and unsuccessful versions, inspected execution details and published the workflow. The [implementation documentation](projects/portfolio-rebalancer/README.md) describes the components and execution behavior.
 
 ## Technical documentation
+
+- [Local integrations setup and reproduction guides](projects/n8n-local-integrations/README.md)
+- [Local integrations execution record](projects/n8n-local-integrations/docs/validation.md)
 
 - [Self-hosted AI agent](projects/self-hosted-ai-agent/README.md)
 - [Self-hosted execution record](projects/self-hosted-ai-agent/validation.md)

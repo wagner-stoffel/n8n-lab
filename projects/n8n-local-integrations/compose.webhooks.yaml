@@ -1,0 +1,6 @@
+services:
+  n8n:
+    environment:
+      N8N_WEBHOOK_URL: ${N8N_PUBLIC_URL:?Set N8N_PUBLIC_URL in .env to your ngrok HTTPS forwarding URL}
+      N8N_PROXY_HOPS: "1"
+
