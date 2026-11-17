@@ -6,6 +6,7 @@ I build and test workflow automations with n8n, AI agents and connected services
 
 | Workflow | Integrations | Implementation |
 | --- | --- | --- |
+| [Self-hosted AI agent](projects/self-hosted-ai-agent/README.md) | Docker, Ollama, OpenRouter and Marketstack | Local n8n, persistent storage, remote and local inference, and financial-data tool calls |
 | [Product expert voice agent](projects/product-expert-voice-agent/README.md) | ElevenLabs, n8n, Supabase, Gemini and OpenAI embeddings | Agentic product retrieval, spoken answers, webhook integration and publication |
 | [Product knowledge ingestion](projects/product-knowledge-ingestion/README.md) | Google Sheets, Supabase and OpenAI embeddings | Product transformation, category metadata, 1536-dimensional embeddings and 60-document ingestion |
 | [Voice workflows and portfolio assistant](projects/elevenlabs-n8n-integration/README.md) | ElevenLabs, Gemini and Google Sheets | Audio round trip, POST webhook tool, holdings lookup and published voice conversation |
@@ -13,6 +14,10 @@ I build and test workflow automations with n8n, AI agents and connected services
 | [Portfolio rebalancer](projects/portfolio-rebalancer/README.md) | Google Sheets, Marketstack, Gmail and Pushover | Form input, EOD price updates, proposed quantities, allocation checks and conditional notifications |
 | [Messaging and notifications](projects/messaging/README.md) | Pushover, Telegram and Slack | Push notifications, conversational replies and responses to app mentions |
 | [Data mapping](docs/data-and-expressions.md) | JSON and n8n expressions | Prompt input, agent output, reply destination and memory session mapping |
+
+## Self-hosted AI agent
+
+I deployed n8n locally with Docker and persistent storage, built a price assistant with Simple Memory and Marketstack, and tested remote models through OpenRouter. I then connected the agent to Ollama on the host and tested a stock-price query using local inference. I inspected successful tool calls and a DeepSeek response that required repeating the request.
 
 ## Product expert voice agent
 
@@ -44,6 +49,9 @@ I implemented a form-driven workflow that reads a portfolio, retrieves EOD price
 I tested successful and unsuccessful versions, inspected execution details and published the workflow. The [implementation documentation](projects/portfolio-rebalancer/README.md) describes the components and execution behavior.
 
 ## Technical documentation
+
+- [Self-hosted AI agent](projects/self-hosted-ai-agent/README.md)
+- [Self-hosted execution record](projects/self-hosted-ai-agent/validation.md)
 
 - [Product expert voice agent](projects/product-expert-voice-agent/README.md)
 - [Product expert execution record](projects/product-expert-voice-agent/validation.md)
