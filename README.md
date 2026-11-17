@@ -6,6 +6,8 @@ I build and test workflow automations with n8n, AI agents and connected services
 
 | Workflow | Integrations | Implementation |
 | --- | --- | --- |
+| [AI web search pipeline](projects/ai-web-search-pipeline/README.md) | OpenRouter, structured output, Firecrawl and HTTP Request | Query generation, web search and JSON delivery through POST |
+| [Google Drive file notifications](projects/google-drive-file-notifications/README.md) | Google Drive, OAuth2 and Pushover | Published folder polling and file-arrival notifications |
 | [Local integrations](projects/n8n-local-integrations/README.md) | Docker, ngrok, Google OAuth2, Google Sheets and Gmail | Local workflow execution, public webhooks, spreadsheet retrieval and draft creation |
 | [Self-hosted AI agent](projects/self-hosted-ai-agent/README.md) | Docker, Ollama, OpenRouter and Marketstack | Local n8n, persistent storage, remote and local inference, and financial-data tool calls |
 | [Product expert voice agent](projects/product-expert-voice-agent/README.md) | ElevenLabs, n8n, Supabase, Gemini and OpenAI embeddings | Agentic product retrieval, spoken answers, webhook integration and publication |
@@ -56,6 +58,11 @@ I prepared a dedicated-server architecture and Docker Compose configuration for 
 [HomeLab AI configuration and operating guides](projects/homelab-ai/README.md)
 
 ## Technical documentation
+
+- [AI web search pipeline](projects/ai-web-search-pipeline/README.md)
+- [Search execution record](projects/ai-web-search-pipeline/validation.md)
+- [Google Drive file notifications](projects/google-drive-file-notifications/README.md)
+- [Structured outputs and HTTP requests](docs/structured-outputs-and-http-requests.md)
 
 - [HomeLab AI architecture and configuration](projects/homelab-ai/README.md)
 - [HomeLab AI backup and restore procedure](projects/homelab-ai/docs/backup-and-restore.md)
